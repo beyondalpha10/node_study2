@@ -20,11 +20,8 @@ app.get('/board', (req, res) => {
   res.json(data)
 })
 
-app.set('port', process.env.PORT || 80);
+app.set('port', process.env.PORT || 8080);
 
 const server = app.listen(app.get('port'), () => {
   console.log('Express server listening on port ' + server.address().port)
 })
-
-//주석추가
-//한번더
